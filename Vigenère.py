@@ -1,7 +1,4 @@
 
-
-
-
 def vigenere(message, code):
     
     note = list(message.upper())
