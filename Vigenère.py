@@ -4,7 +4,6 @@
 
 def vigenere(message, code):
     
-    
     note = list(message.upper())
     hidden = list(code.upper())
 
@@ -16,19 +15,8 @@ def vigenere(message, code):
         v = (ord(note[i])-ord('A') + ord(hidden[i])-ord('A')) % 26
         num = chr(v + ord('A'))
         final.append(num) 
-        
-
-
-    
-
-    
-
 
     return ''.join(final)
-
-
-print(vigenere('message', 'code'))
-
 
 
 
